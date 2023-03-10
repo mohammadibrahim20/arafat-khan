@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:ital,wght@0,200;0,400;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" width="125px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" alt="" width="30px" height="30px">
+        <a href="cart.html"><img src="images/menu.png" class="menu-icon"></a>
+    </div>
+ </div>
+<!-- ------------- Cart Items Details----------- -->
+<!-- <div class="small-container cart-page">
+<table>
+    <tr>
+        <th>Products</th>
+        <th>Quantity</th>
+        <th>Subtotabl</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/buy-1.jpg" alt="">
+            </div>
+            <p>Red Printed Tshirt</p>
+            <small>Price:$<span id="shirt-price">50.00</span></small>
+            <br>
+            <a href="">Remove</a>
+        </td>
+        <td><input type="number" id="shrit-quantity" value="1"></td>
+        <td >$ <span id="shirt-total">50.00</span></td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/buy-2.jpg" alt="">
+            </div>
+            <p>Red Printed Tshirt</p>
+            <small>Price: <span id="shoe-price">50.00</span> </small>
+            <br>
+            <a href="">Remove</a>
+        </td>
+        <td><input type="number" id="shoe-quantity-" value="1"></td>
+        <td>$ <span id="shoe-total">50.00</span></td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/buy-3.jpg" alt="">
+            </div>
+            <p>Red Printed Tshirt</p>
+            <small>Price:$ <span id="pant-price">50.00</span></small>
+            <br>
+            <a href="">Remove</a>
+        </td>
+        <td><input type="number" id="pant-quantity" value="1"></td>
+        <td>$ <span id="pant-total">50.00</span></td>
+    </tr>
+</table>
+
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>$35.00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>$235.00</td>
+        </tr>
+    </table>
+</div>
+</div> -->
+<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Products</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/buy-1.jpg" alt="">
+					</div>
+					<p>Red Printed Tshirt</p>
+					<small>Price:$<span id="shirt-price">50.00</span></small>
+					<br>
+					<a href="">Remove</a>
+				</td>
+				<td><input type="number" id="shirt-quantity" value="1"></td>
+				<td>$<span id="shirt-total">50.00</span></td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/buy-2.jpg" alt="">
+					</div>
+					<p>Black Leather Shoes</p>
+					<small>Price:$<span id="shoe-price">100.00</span></small>
+					<br>
+					<a href="">Remove</a>
+				</td>
+				<td><input type="number" id="shoe-quantity" value="1"></td>
+				<td>$<span id="shoe-total">100.00</span></td>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/buy-3.jpg" alt="">
+					</div>
+					<p>Blue Jeans</p>
+					<small>Price:$<span id="jeans-price">75.00</span></small>
+					<br>
+					<a href="">Remove</a>
+				</td>
+				<td><input type="number" id="jeans-quantity" value="1"></td>
+				<td>$<span id="jeans-total">75.00</span></td>
+			</tr>
+		</table>
+
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>$<span id="subtotal">0.00</span></td>
+				</tr>
+				<tr>
+					<td>Tax (17.5%)</td>
+					<td>$<span id="tax">0.00</span></td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$<span id="total">0.00</span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+ 
+    <!-------- Footer ---------->
+
+    <div class="footer">
+        <div class="Container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logo-white.png" alt=""></a>                    <p>Our Purpose Is to Sustainably Make the pleasure and benefits of sports accessible to the many.</p>
+                    <p>Our Purpose Is to Sustainably Make the pleasure and benefits of sports accessible to the many.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/profile.php?id=100010559531025" target="_blank"><li>Facebook</li></a>
+                        <a href="https://twitter.com/MohYasinarafat" target="_blank"><li>Twitter</li></a>
+                        <a href="https://www.instagram.com/muhammed_yasin_arafat.ctg/" target="_blank"><li>instagram</li></a>
+                        <a href="https://www.youtube.com/" target="_blank"><li>YouTube</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Md Yasin Arafat</p>
+        </div>        
+    </div>
+    <!-- js File Conected -->
+    <script src="js/app.js"></script>
+ </body>
+</html>
